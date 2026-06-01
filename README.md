@@ -1,4 +1,5 @@
 Ejercicio  – Sistema de libros en Laravel
+(ye, this was vibecoded cuz i cba doing html frontend)
 
 Enunciado: 
 Desarrollar un sistema en Laravel que permita:
