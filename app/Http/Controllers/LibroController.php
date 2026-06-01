@@ -7,20 +7,17 @@ use Illuminate\Http\Request;
 
 class LibroController extends Controller
 {
-    // Mostrar lista
     public function index()
     {
         $libros = Libro::all();
         return view('libros.show', compact('libros'));
     }
 
-    // Formulario crear
     public function create()
     {
         return view('libros.register');
     }
 
-    // Guardar nuevo libro
     public function store(Request $request)
     {
         $request->validate([
@@ -33,13 +30,11 @@ class LibroController extends Controller
         return redirect()->route('libros.index')->with('success', 'Libro registrado correctamente.');
     }
 
-    // Formulario editar
     public function edit(Libro $libro)
     {
         return view('libros.edit', compact('libro'));
     }
 
-    // Actualizar libro
     public function update(Request $request, Libro $libro)
     {
         $request->validate([
@@ -52,13 +47,11 @@ class LibroController extends Controller
         return redirect()->route('libros.index')->with('success', 'Libro actualizado correctamente.');
     }
 
-    // Confirmación eliminar
     public function confirmDelete(Libro $libro)
     {
         return view('libros.delete', compact('libro'));
     }
 
-    // Eliminar libro
     public function destroy(Libro $libro)
     {
         $libro->delete();

@@ -1,4 +1,3 @@
-{{-- resources/views/libros/register.blade.php --}}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,15 +24,15 @@
             @csrf
 
             <label for="titulo">Título</label>
-            <input type="text" id="titulo" name="titulo" value="{{ old('titulo') }}" placeholder="Ej. Cien años de soledad">
+            <input type="text" id="titulo" name="titulo" value="{{ old('titulo') }}" placeholder="Nombre del Libro">
             @error('titulo') <p class="error">{{ $message }}</p> @enderror
 
             <label for="autor">Autor</label>
-            <input type="text" id="autor" name="autor" value="{{ old('autor') }}" placeholder="Ej. Gabriel García Márquez">
+            <input type="text" id="autor" name="autor" value="{{ old('autor') }}" placeholder="Autor">
             @error('autor') <p class="error">{{ $message }}</p> @enderror
 
             <label for="año">Año de publicación</label>
-            <input type="number" id="año" name="año" value="{{ old('año') }}" placeholder="Ej. 1967">
+            <input type="number" id="año" name="año" value="{{ old('año') }}" placeholder="Año">
             @error('año') <p class="error">{{ $message }}</p> @enderror
 
             <button type="submit" class="btn btn-primary">Guardar</button>

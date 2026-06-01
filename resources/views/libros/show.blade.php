@@ -1,4 +1,3 @@
-{{-- resources/views/libros/show.blade.php --}}
 <!DOCTYPE html>
 <html lang="es">
 <head>
