@@ -1,3 +1,23 @@
+Ejercicio  – Sistema de libros en Laravel
+
+Enunciado: 
+Desarrollar un sistema en Laravel que permita:
+•Registrar libros
+•Mostrar lista de libros
+•Editar libros
+•Eliminar libros
+
+Cada libro tendrá:
+•título
+•autor
+•año
+
+Resultado esperado
+•Página funcional
+•CRUD básico
+•Conexión a base de datos
+•8 datos almacenados
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
